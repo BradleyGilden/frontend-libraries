@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# tailwind config file
+twconfig=$(ls tailwind.config.js 2> /dev/null)
+
+if [ $# -lt 2 ]; then
+    echo "vite-create <app-title> <dirname>"
+elif [ $# -eq 2 ]; then
+    npm create vite@latest "$2" -- --template react
+    cd "$2"
+    npm install
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+    echo "" > **/App.css
+    echo "@tailwind base;
+@tailwind components;
+@tailwind utilities;" > **/index.css
+    cd ..
+    echo "/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'fg': '#f1f1f1',
+        'bg': '#1c1c1e',
+      },
+      textColor : {
+        'fg': '#f1f1f1',
+        'bg': '#1c1c1e',
+      },
+      fontSize: {
+        '4xl': '3rem'
+      }
+    },
+    fontFamily: {
+      'inter': ['Inter', 'sans-serif'],
+    }
+  },
+  plugins: [],
+}" > "$2"/tailwind.config.js
+    cd "$2"
+    rm -rf **/*.svg
+    sed -i "s/Vite + React/$1/g" index.html 
+fi
