@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Bradley Gilden">
+        <meta name="description" content="Page includes implementation of HTML tables">
+        <meta name="keywords" content="HTML,CSS,tables,stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <title>Tables</title>
+    </head>
+
+    <body>
+        <h1 align="center">Store Activity</h1>
+        
+        <table align="center" border="3" style="background-color: rgb(61, 70, 70);">
+            <tr align="center" style="background-color: rgb(0, 0, 0);color:rgb(198, 198, 198);"> <!--table row-->
+                <th>Sunday</th> <!--Table headers-->
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+            <tr align="center">
+                <td>5-8</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>Closed</td>
+                <td>10-2</td>
+            </tr>
+            <tr align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+        <h1 align="center">Buttons</h1>
+        <center>
+        <a href="https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ">
+        <button style="background-color: white;border-radius: 10px">click me</button>
+        </a>
+        </center>
+
+        <br><br><br>
+
+        <center>
+            <button onclick="dosomething()" style="background-color: white;border-radius: 10px">change text</button>
+            <p id="greeting">Hello</p>
+        </center>
+        <!--not necessary but the code just changes the state of the paragraph upon click-->
+        <script>
+            function dosomething(){
+                const paragraph = document.getElementById("greeting");
+                const text = paragraph.textContent;
+                if (text === "Hello"){
+                    paragraph.innerHTML = "Goodbye"
+                }
+                else{
+                    paragraph.innerHTML = "Hello"
+                }
+            }
+
+        </script>
+    </body>
+</html>

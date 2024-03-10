@@ -1,2 +1,23 @@
-# frontend-libraries
-focused on the study of frontend frameworks and libraries!
+<h1 align="center">Front-end Concepts</h1>
+
+This repository contains front-end concepts to cover in depth as milestones
+
+<img src="resources/frontend.jpeg">
+
+## Milestones reached/in progress:
+
+* HTML  :heavy_check_mark:
+* CSS   :heavy_check_mark:
+* JavaScript :heavy_check_mark:
+* TypeScript :heavy_check_mark:
+* Reactjs :heavy_check_mark:
+  * Nextjs :x:
+* Vuejs :x:
+
+<!-- 
+## To disable CS50 default actions
+
+"git.enableSmartCommit": false,
+"git.autofetch": false,
+"git.autoCommit": "none",
+"git.enableCommitSigning": false -->

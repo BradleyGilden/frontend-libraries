@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nimbus Forecast</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- STYLES -->
+        <link rel="stylesheet" href="./styles/main.css">
+        <!-- ICON -->
+        <link rel="icon" type="image/x-icon" href="./imgs/cloud.png">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Josefin+Sans:ital,wght@0,400;1,300&family=Libre+Barcode+128+Text&family=Oswald&family=Pixelify+Sans&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cover">
+            <header>
+                <div class="logo">
+                    <div alt="icon" class="icon"></div>
+                    <a href="./index.html">
+                        <div class="title">NIMBUS</div>
+                    </a>
+                </div>
+                <button class="navbutton"></button>
+                <nav class="nav">
+                    <a class="selector visited" href="./index.html" target="_self">Today</a>
+                    <a class="selector" href="./hours.html" target="_self">Hourly</a>
+                    <a class="selector" href="./weekly.html" target="_self">Weekly</a>
+                </nav>
+            </header>
+            <div class="interface">
+                <div class="current">
+                    <div class="current__title">Current Weather</div>
+                    <div class="current__content">
+                        <div class="current__content-widget">
+                            <div class="widget__icon"></div>
+                            <div class="widget__text">
+                                <p class="widget__text-temp"></p>
+                                <p class="widget__text-feel"></p>
+                                <p class="widget__text-description"></p>
+                            </div>
+                        </div>
+                        <div class="current__content-stats">
+                            <div class="stats__prec">
+                                <div class="stats__prec-icon"></div>
+                                <p class="stats__prec-value"></p>
+                            </div>
+                            <div class="stats__wind">
+                                <div class="stats__wind-icon"></div>
+                                <p class="stats__wind-value"></p>
+                            </div>  
+                            <div class="stats__date">
+                                <div class="stats__date-icon"></div>
+                                <p class="stats__date-value"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="today">
+                        <div class="today__title">Today's Weather</div>
+                        <div class="today__content">
+                            <div class="today__content-widget">
+                                <div class="widget__icon2"></div>
+                                <div class="widget__text-col">
+                                    <div class="widget__temp">
+                                        <p class="widget__temp-max">21°C</p>
+                                        <p class="widget__temp-min">18°C</p>
+                                    </div>
+                                    <p class="widget__description2">Overcast</p>
+                                </div>
+                            </div>
+                            <div class="today__content-stats">
+                                <div class="stats__prec">
+                                    <div class="stats__prec-icon"></div>
+                                    <p class="stats__prec-value2">pecipitation: 10%</p>
+                                    <p class="stats__prec-hours">duration: 4hrs</p>
+                                </div>
+                                <div class="stats__wind">
+                                    <div class="stats__wind-icon"></div>
+                                    <p class="stats__wind-value2">windspeed: 10kn</p>
+                                    <p class="stats__wind-direct">direction: 101°</p>
+                                </div>  
+                                <div class="stats__date">
+                                    <div class="stats__date-icon"></div>
+                                    <p class="stats__date-sunrise">sunrise: 05:00</p>
+                                    <p class="stats__date-sunset">sunset: 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <script type="module" src="./scripts/api.js"></script>
+        <script src="./scripts/style.js"></script>
+    </body>
+</html>

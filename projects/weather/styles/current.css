@@ -1,0 +1,111 @@
+body .cover .interface .current {
+  width: 70%;
+  background-color: var(--cards);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 200px;
+  margin: 60px auto;
+}
+body .cover .interface .current__title {
+  text-align: left;
+  font-family: var(--Josef-Sans);
+  font-size: 1.3rem;
+  color: var(--text-col);
+  padding-bottom: 15px;
+}
+body .cover .interface .current__content {
+  display: flex;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+body .cover .interface .current__content-widget {
+  display: flex;
+  gap: 10px;
+}
+body .cover .interface .current__content-widget .widget__icon {
+  width: 120px;
+  height: 120px;
+  flex-grow: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .cover .interface .current__content-widget .widget__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .cover .interface .current__content-widget .widget__text-temp {
+  font-family: var(--Josef-Sans);
+  font-size: 3.5rem;
+  color: var(--text-col);
+}
+body .cover .interface .current__content-widget .widget__text-feel, body .cover .interface .current__content-widget .widget__text-description {
+  font-family: var(--Josef-Sans);
+  color: var(--text-col);
+  font-size: var(--sfont-size);
+}
+body .cover .interface .current__content-widget .widget__text-description {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  color: var(--desc-col);
+}
+body .cover .interface .current__content-stats {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+body .cover .interface .current__content-stats .stats__prec-value, body .cover .interface .current__content-stats .stats__wind-value, body .cover .interface .current__content-stats .stats__date-value {
+  font-size: var(--sfont-size);
+  color: var(--text-col);
+  font-family: var(--Josef-Sans);
+}
+body .cover .interface .current__content-stats .stats__prec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid var(--divider);
+  padding-right: 5px;
+  gap: 10px;
+}
+body .cover .interface .current__content-stats .stats__prec-icon {
+  background-image: url("../imgs/wicons/umbrella.png");
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .cover .interface .current__content-stats .stats__wind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid var(--divider);
+  padding-right: 5px;
+  gap: 10px;
+}
+body .cover .interface .current__content-stats .stats__wind-icon {
+  background-image: url("../imgs/wicons/wind.png");
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .cover .interface .current__content-stats .stats__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+body .cover .interface .current__content-stats .stats__date-icon {
+  background-image: url("../imgs/wicons/clock.png");
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=current.css.map */

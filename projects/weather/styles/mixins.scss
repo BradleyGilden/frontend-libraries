@@ -1,0 +1,16 @@
+@mixin card-template($cards) {
+  width: 70%;
+  background-color: $cards;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@mixin title-template($font, $text-col) {
+  text-align: left;
+  font-family: $font;
+  font-size: 1.3rem;
+  color: $text-col;
+  padding-bottom: 15px;
+}

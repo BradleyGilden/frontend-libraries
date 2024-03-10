@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./imgs/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  height: 10%;
+}
+.header__title {
+  text-align: center;
+  line-height: 8vh;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: max(4vw, 2.7rem);
+  color: white;
+  padding-top: 5px;
+}
+
+.frame {
+  display: grid;
+  height: 90%;
+  width: 100vw;
+  place-items: center;
+}
+
+.calc {
+  border: 4px solid rgb(15, 194, 206);
+  width: 400px;
+  padding: 20px;
+  height: 80%;
+  background-color: rgba(0, 0, 255, 0.349);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.calc__screen {
+  height: 15%;
+  border: 3px solid rgb(15, 194, 206);
+  background-color: rgba(26, 86, 26, 0.652);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.calc__screen--output {
+  overflow-x: auto;
+  color: white;
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+  text-align: end;
+  padding: 10px;
+  font-size: 2.3rem;
+}
+.calc__buttons {
+  background-color: rgba(0, 6, 48, 0.447);
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px rgb(15, 194, 206);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4px;
+  padding: 20px;
+}
+
+.button {
+  color: rgb(0, 255, 247);
+  font-weight: 600;
+  font-size: 25px;
+  background-color: black;
+  display: grid;
+  place-content: center;
+  border-radius: 10px;
+}
+.button.div, .button.min {
+  font-size: 30px;
+}
+.button.eq {
+  background-color: rgb(192, 143, 46);
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 255, 247);
+  color: black;
+}
+
+@media (max-width: 450px) {
+  .calc {
+    width: 300px;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+}
+@media (min-height: 670px) and (max-width: 450px) {
+  .calc {
+    height: 60%;
+  }
+}/*# sourceMappingURL=calc.css.map */
