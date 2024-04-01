@@ -10,7 +10,7 @@ This repository contains front-end concepts to cover in depth as milestones
  :heavy_check_mark:
 * ![Static Badge](https://img.shields.io/badge/CSS-white?style=flat-square&logo=css3&logoColor=%231572B6)
  :heavy_check_mark:
-* ![Static Badge](https://img.shields.io/badge/Next.js-%23F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+* ![Static Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=flat-square&logo=javascript&logoColor=black)
  :heavy_check_mark:
 * ![Static Badge](https://img.shields.io/badge/TypeScript-white?style=flat-square&logo=typescript&logoColor=%233178C6)
  :heavy_check_mark:
