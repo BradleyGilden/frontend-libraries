@@ -1,0 +1,17 @@
+html,
+body {
+    margin: 0;
+    background-color: #282a36;
+    color: #f8f8f2;
+    box-sizing: border-box;
+}
+
+.square {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 2rem
+}
