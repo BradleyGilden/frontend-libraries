@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         yoyo: true,
         ease: 'power2.out',
         repeat:-1,
-        rotation: 90
+        rotation: 90,
+        backgroundColor: 'purple'
     })
 });
