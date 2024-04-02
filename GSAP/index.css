@@ -32,3 +32,19 @@ body {
     -webkit-box-sizing:content-box;
     box-sizing:content-box;
 }
+
+#typewriter2 {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24.09rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
