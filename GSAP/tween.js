@@ -10,10 +10,16 @@
  * @param {number} [repeat=0] - the number of times to repeat the tween
  */
 
-const shiftTo = (gsap, obj, properties) => {
-    gsap.to(obj, properties)
+const gshift = (gsap, obj, method, properties) => {
+    if (method === 'to') {
+        gsap.to(obj, properties)
+    } else if (method === 'fromTo') {
+        gsap.fromTo(obj, properties.duration || 1, properties.from, properties.to, properties.pos || 0)
+    } else if (method === 'from') {
+        gsap.from(obj, properties)
+    }
 }
 
 export {
-    shiftTo,
+    gshift,
 }
