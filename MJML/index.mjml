@@ -1,0 +1,94 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email-Template</mj-title>
+    <mj-preview>this is my first mjml template</mj-preview>
+    <mj-style>
+      .title-h div {
+        line-height: 200px !important;
+      }
+      .call-to-action a {
+          font-size: 30px !important  ;
+        }
+      @media only screen and (max-width:480px) {
+        .title-h div {
+          line-height: 40px !important  ;
+        }
+      }
+
+      @media only screen and (max-width:340px) {
+        .call-to-action a {
+          font-size: 20px !important  ;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="rgba(25, 25, 25)">
+    <mj-section>
+    <mj-column width="145px">
+        <mj-text
+          font-size="40px"
+          color="#F45E43"
+          font-family="helvetica"
+          align="center"
+          padding="0px"
+          css-class="title-h"
+        >
+          KiKKER
+        </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-image
+      width="200px"
+      padding="0px"
+      src="https://i.postimg.cc/0NfKZWnG/image-removebg-preview.png"
+      >
+      </mj-image>
+    </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column
+      border-top="4px solid grey"
+      width="80%"
+      >
+        <mj-text
+          font-size="20px"
+          color="#F45E43"
+          font-family="helvetica"
+          align="center"
+          padding-top="20px"
+        >Quality Kicks Exported Internationally
+      </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section 
+      background-url="https://images.unsplash.com/photo-1576491110919-df70d852860f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      background-size="cover"
+      background-repeat="no-repeat"
+      padding="50px"
+    >
+      <mj-column>
+        <mj-button
+          href="https://tekkietown.co.za/"
+          background-color="rgba(20, 20, 20, 0.7)" 
+          color="white"
+          align="center"
+          css-class="call-to-action"
+          padding="30px 0px"
+          height="50px"
+        > ORDER NOW
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text
+          font-size="15px"
+          color="rgb(200, 200, 200)"
+        >
+          Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse primis, iaculis ligula praesent velit pharetra taciti sed interdum nulla est, euismod sagittis accumsan sociosqu eget parturient curae erat. Eleifend tristique egestas vulputate donec integer habitasse magna volutpat, mus purus justo turpis pretium mauris erat platea bibendum, vel dui fermentum porta ultrices sapien sed
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
