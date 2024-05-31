@@ -1,0 +1,128 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email-Template</mj-title>
+    <mj-preview>this is my first mjml template</mj-preview>
+    <mj-font name="Source Code Pro" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" />
+
+    <mj-style inline="inline">
+      .scpfont div {
+        color: white !important;
+        font-size: 20px !important;
+      }
+
+      .description div {
+        color: #FF69B4 !important;
+        font-size: 15px !important;
+      }
+
+      .icon2 {
+        height: 25px !important;
+      }
+
+      .col2 {
+        text-decoration: none !important;
+        color: #FF69B4 !important;
+        font-style: italic !important;
+      }
+    </mj-style>
+    <mj-style>
+      @media (max-width: 480px) {
+        .invert {
+          filter: invert(100%) !important;
+          -webkit-filter: invert(100%) !important;
+        }
+
+        .slogan div {
+          font-size: 12px !important;
+        }
+
+        .description div {
+          font-size: 14px !important;
+          margin-top: 4px !important;
+        }
+
+        .col2 {
+          font-size: 12px !important;
+        }
+        .title div {
+          font-size: 20px !important;
+        }
+        .spacer div {
+          height: 10px !important;
+        }
+        .icon, .icon2 {
+          height: 18px !important;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .gmailcol {
+          padding-right: 5px !important;
+        }
+
+        .col2 {
+          font-size: 11px !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="500px">
+    <mj-section background-color="black" border-radius="20px">
+      <mj-group>
+        <mj-column>
+          <mj-image width="200px" src="https://lh3.googleusercontent.com/pw/AP1GczNfZ4FAQZYz7elYZj4V5zkAQ1iff5CpwtZLgOxAadctZsQhlMnYY44hKXnmmNEQP5mnz3NNhphU25-H0ajWKGiy0-9uSfd0AIyGLhb4qfxlkHUNvn9k=w2400?source=screenshot.guru%22%3E%20%3Cimg%20src=%22https://lh3.googleusercontent.com/pw/AP1GczNfZ4FAQZYz7elYZj4V5zkAQ1iff5CpwtZLgOxAadctZsQhlMnYY44hKXnmmNEQP5mnz3NNhphU25-H0ajWKGiy0-9uSfd0AIyGLhb4qfxlkHUNvn9k=w500-h315-p-k" alt="profile" />
+        </mj-column>
+        <mj-column>
+          <mj-text css-class="scpfont title" padding="0px" font-family="Source Code Pro, Arial">
+            Bradley Gilden
+          </mj-text>
+          <mj-text css-class="description" padding="4px 0px" font-family="Source Code Pro, Arial">
+            Full Stack Developer
+          </mj-text>
+
+          <mj-text css-class="slogan" color="white" font-family="Source Code Pro, Arial">
+            Innovative Web Solutions
+            Tailored For You
+          </mj-text>
+          <mj-spacer css-class="spacer" height="20px" />
+          <mj-table padding="0px">
+            <tr style="text-align:left;color:white;">
+              <td class="gmailcol" style="padding: 0;">
+                <a href="https://www.linkedin.com/in/bradley-gilden/">
+                  <img class="invert icon" style="height: 22px;" src="https://i.ibb.co/G0yswYg/linkedinedit.png" />
+                </a>
+              </td>
+              <td  style="padding: 0; vertical-align: top;">
+                <a class="col2" href="https://www.linkedin.com/in/bradley-gilden/">
+                  bradley-gilden
+                </a>
+              </td>
+            </tr>
+            <tr style="text-align:left;color:white;">
+              <td class="gmailcol" style="padding: 4px 0px;">
+                <a href="mailto: gildenservice@gmail.com">
+                  <img class="invert icon2" style="height: 22px;" src="https://i.ibb.co/r6gxFQ9/emai2.png" />
+                </a>
+              </td>
+              <td style="padding: 4px 0px; vertical-align: top;">
+                <a class="col2" href="mailto: gildenservice@gmail.com">
+                  gildenservice@gmail.com
+                </a>
+              </td>
+            </tr>
+            <tr style="text-align:left;color:white;">
+              <td class="gmailcol" style="padding: 0px;">
+                <a href="https://www.linkedin.com/in/bradley-gilden/">
+                  <img class="invert icon" style="height: 22px;" src="https://i.ibb.co/qNzyyyy/phone.png" />
+                </a>
+              </td>
+              <td class="col2" style="padding: 0px; vertical-align: top;">
+                078-475-8919
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>
