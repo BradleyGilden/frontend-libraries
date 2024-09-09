@@ -1,0 +1,73 @@
+<mjml>
+  <mj-head>
+    <mj-title>Contract Management Tips</mj-title>
+    <mj-preview>IMPORTANT: CORRECTING ERRORS AFTER SAVING A CONTRACT IN 4ME</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900" />
+    <mj-font name="League Spartan" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900" />
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900" />
+  
+    <mj-attributes>
+      <mj-all font-family="Montserrat" />
+      <mj-accordion border="none" padding="1px" />
+      <mj-accordion-element icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png" icon-unwrapped-url="https://i.imgur.com/KKHenWa.png" icon-height="24px" icon-width="24px" />
+      <mj-accordion-title font-family="Roboto, Open Sans, Helvetica, Arial, sans-serif" background-color="#fff" color="#031017" padding="15px" font-size="18px" />
+      <mj-accordion-text font-family="Open Sans, Helvetica, Arial, sans-serif" background-color="#fafafa" padding="15px" color="#505050" font-size="14px" />
+    </mj-attributes>
+
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="40px" align="center" font-family="Abadi" color="#d41224">Contract Management Tips</mj-text>
+      </mj-column>
+    </mj-section>
+        <mj-section>
+      <mj-column>
+        <mj-image src="https://i.imgur.com/6HQAzA4.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="25px" align="center" font-family="Abadi" color="#d41224">More Tips....</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px" background-color="#ffffff">
+      <mj-column background-color="#dededd">
+        <mj-accordion>
+          <mj-accordion-element>
+            <mj-accordion-title>A Few Reminders: #1</mj-accordion-title>
+            <mj-accordion-text>
+              <span style="line-height:20px">
+                Because emails with a lot of content are most of the time a very bad experience on mobile, mj-accordion comes handy when you want to deliver a lot of information in a concise way.
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+          <mj-accordion-element>
+            <mj-accordion-title>A Few Reminders #2</mj-accordion-title>
+            <mj-accordion-text>
+              <span style="line-height:20px">
+                Content is stacked into tabs and users can expand them at will. If responsive styles are not supported (mostly on desktop clients), tabs are then expanded and your content is readable at once.
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+          <mj-accordion-element>
+            <mj-accordion-title>A Few Reminders #3</mj-accordion-title>
+            <mj-accordion-text>
+              <span style="line-height:20px">
+                Content is stacked into tabs and users can expand them at will. If responsive styles are not supported (mostly on desktop clients), tabs are then expanded and your content is readable at once.
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+        </mj-accordion>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button href="https://mrpricegroup-my.sharepoint.com/:w:/p/bgilden/ERpdv1LefJlBqIy_9wz6LPYBr8QsE_kyB7_pOzujgfwiKQ?e=CyRqOE" align="center" background-color="#d41224" color="white">
+          View All Tips
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
