@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
   const [advice, setAdvice] = useState('Hello World')
@@ -13,13 +13,25 @@ function App() {
     setAdvice(data.slip.advice)
   }
 
+  useEffect(() => {
+    getAdvice()
+  }, [])
+
   return (
     <>  
     <h1>{advice}</h1>
     <button onClick={getAdvice}>get advice</button>
-    <p>You have read <strong>{readCount}</strong> pieces of advice</p>
+    <Message count={readCount} />
     </>
   )
+
+  function Message(props) {
+    return (
+      <p>
+        You have read <strong>{props.count}</strong> pieces of advice
+      </p>
+    )
+  }
 }
 
 export default App
