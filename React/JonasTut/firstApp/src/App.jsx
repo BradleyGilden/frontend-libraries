@@ -8,7 +8,8 @@ function App() {
   async function getAdvice() {
     const response = await fetch('https://api.adviceslip.com/advice')
     const data = await response.json()
-    setReadCount(readCount + 1)
+    // access internal state variable in set<StateName>(callback(stateVariable))
+    setReadCount((count) => count + 1)
     setAdvice(data.slip.advice)
   }
 
